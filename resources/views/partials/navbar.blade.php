@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-danger ">
     <div class="container mt-2">
-      <a class="navbar-brand" href="/"><h3 class="text-white">Aspirasiku</h3></a>
+      <a class="navbar-brand" href="/"><h3 class="text-white nav-head-text">Aspirasiku</h3></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

@@ -1,11 +1,19 @@
 .btn-primary{
     background-color: #2E2A2A;
     font-weight: bold;
+    border: 0;
+    font-size: 19px;
+}
+
+.btn-primary:hover{
+
+    background-color: #494747;
+    font-weight: bold;
 
 }
 
-
 body{
+    background-color: #EFE7E7;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -18,4 +26,8 @@ h1{
 
     height: 100vh;
     background-color: #D9D9D9;
+}
+
+.nav-head-text{
+    font-weight: bold;
 }
