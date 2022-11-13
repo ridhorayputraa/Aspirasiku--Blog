@@ -38,8 +38,18 @@
                 {{-- for right --}}
 
                 {{-- container for aspirasi content --}}
-                <div class="container border">
-                    <h4>Judul Aspirasi</h4>
+                <div class="container ">
+                    @foreach ( $messages as $message )
+                    <div class="container my-4 border">
+                        <p>{{ $message->title }}</p>
+                         <p>AUthor</p>
+                         <p>Category</p>
+                           <div class="border-bottom">
+
+                           </div>
+                           <p>{{ $message->excerpt }}</p>
+                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
