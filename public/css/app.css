@@ -18,6 +18,13 @@ body{
 
 }
 
+.main-message{
+    padding: 1em  0.5em;
+    background-color: #A1A1A1;
+}
+
+
+
 h1{
     font-weight:600;
 }

@@ -34,17 +34,17 @@
             </div>
 
             <div class="col-12 col-md-9 ">
-                <h1 class="mb-3">Usulan</h1>
+                <h1 class="mb-2">Usulan</h1>
                 {{-- for right --}}
 
                 {{-- container for aspirasi content --}}
-                <div class="container ">
+                <div class="row container ">
                     @foreach ( $messages as $message )
-                    <div class="container my-4 border">
+                    <div class="container my-4 main-message border">
                         <p>{{ $message->title }}</p>
                          <p>AUthor</p>
                          <p>Category</p>
-                           <div class="border-bottom">
+                           <div class="border-bottom  border-dark">
 
                            </div>
                            <p>{{ $message->excerpt }}</p>
