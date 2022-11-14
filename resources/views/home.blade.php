@@ -31,7 +31,19 @@
                             value="{{ request('search') }}">
                     </div>
                 </form>
-            </div>
+
+                <h4 class="my-3">Tags</h4>
+                    <div class="border align-center">
+                        <p>All tag</p>
+                    </div>
+                    @foreach ($categories as $category )
+                    <div class="border align-center ">
+                    <p>{{ $category->name }}</p>
+
+                </div>
+                  @endforeach
+                </div>
+
 
             <div class="col-12 col-md-9 ">
                 <h1 class="mb-2">Usulan</h1>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Messages;
 use App\Http\Requests\StoreMessagesRequest;
 use App\Http\Requests\UpdateMessagesRequest;
+use App\Models\Categories;
 
 class MessagesController extends Controller
 {
@@ -18,7 +19,8 @@ class MessagesController extends Controller
         //
         return view('home',[
             'active' => 'home',
-            'messages' => Messages::all()->where('category_id')
+            'messages' => Messages::all(),
+            'categories' => Categories::all(),
         ]);
     }
 
