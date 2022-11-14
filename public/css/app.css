@@ -19,8 +19,9 @@ body{
 }
 
 .main-message{
+    border-radius: 0.2em;
     padding: 1em  0.5em;
-    background-color: #A1A1A1;
+    background-color: #c7c6c6;
 }
 
 
