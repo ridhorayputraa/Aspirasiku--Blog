@@ -31,6 +31,11 @@
                             value="{{ request('search') }}">
                     </div>
                 </form>
+                @foreach ($categories as $category )
+                  <div class="container">
+                  <p>{{ $category->name }}</p>
+                  </div>
+                @endforeach
             </div>
 
             <div class="col-12 col-md-9 ">
