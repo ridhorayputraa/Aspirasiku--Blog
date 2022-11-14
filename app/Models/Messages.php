@@ -9,4 +9,8 @@ class Messages extends Model
 {
     use HasFactory;
     protected $guraded = ['id'];
+
+    public function categories(){
+        return $this->belongsTo(Categories::class, 'category_id');
+    }
 }

@@ -18,7 +18,7 @@ class MessagesController extends Controller
         //
         return view('home',[
             'active' => 'home',
-            'messages' => Messages::all()
+            'messages' => Messages::all()->where('category_id')
         ]);
     }
 

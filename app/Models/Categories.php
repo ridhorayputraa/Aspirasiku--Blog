@@ -10,4 +10,8 @@ class Categories extends Model
     use HasFactory;
 
     protected $guraded = ['id'];
+
+    public function messages(){
+        return $this->hasMany(Messages::class);
+    }
 }
