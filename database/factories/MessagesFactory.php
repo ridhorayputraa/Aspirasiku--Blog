@@ -27,7 +27,8 @@ class MessagesFactory extends Factory
             'body' => collect($this->faker->paragraphs(mt_rand(5,10)))->map(function($p){
                 return "<p>$p</p>" ;
             })->implode(''),
-            'category_id' => mt_rand(1,3)
+            'category_id' => mt_rand(1,3),
+            'user_id' => mt_rand(1,3)
         ];
     }
 }

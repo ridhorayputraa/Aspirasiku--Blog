@@ -25,6 +25,9 @@ class User extends Authenticatable
 
         protected $guarded = ['id'];
 
+        public function messages(){
+            return $this->hasMany(Messages::class);
+        }
     /**
      * The attributes that should be hidden for serialization.
      *

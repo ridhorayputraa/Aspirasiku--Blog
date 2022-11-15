@@ -32,6 +32,7 @@
                     </div>
                 </form>
 
+                <a class="btn btn-secondary my-2" href="/createmessage">Create Aspiration!</a>
                 <h4 class="my-3">Tags</h4>
                     <div class="border align-center">
                         <p>All tag</p>
@@ -54,7 +55,7 @@
                     @foreach ( $messages as $message )
                     <div class="container my-4 main-message border">
                         <p>{{ $message->title }}</p>
-                         <p>AUthor</p>
+                         <p>{{ $message->users->username }}</p>
                          <p>{{ $message->categories->slug }}</p>
                            <div class="border-bottom  border-dark">
 
